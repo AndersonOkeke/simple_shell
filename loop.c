@@ -98,7 +98,7 @@ void find_cmd(info_t *info)
 		if (!is_delim(info->arg[a], " \t\n"))
 			b++;
 	if (!b)
-		return 0;
+		return;
 
 	path = find_path(info, _getenv(info, "PATH="), info->argv[0]);
 	if (path)
